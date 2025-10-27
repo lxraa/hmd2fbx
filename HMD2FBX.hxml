@@ -1,0 +1,10 @@
+# 使用父目录的 Heaps 源码
+-cp ..
+-main HMD2FBX
+
+# 添加 format 库
+-lib format
+
+# 编译为 HashLink 字节码
+-hl HMD2FBX.hl
+
