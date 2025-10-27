@@ -4,27 +4,58 @@
 
 ## 环境要求
 
-- **Heaps**: 2.1.0
+- **Heaps 源码**: 2.1.0
 - **Haxe**: 4.3.2
 - **HashLink**: 1.15.0
 - **format library**: 通过 haxelib 安装
 
 ## 快速开始
 
-### 1. 安装依赖
+### 1. 获取 Heaps 源码
+
+本工具需要在 Heaps 源码目录下编译和运行。
+
+```bash
+# 下载 Heaps 源码
+git clone https://github.com/HeapsIO/heaps.git
+cd heaps
+
+# 或者下载特定版本
+git clone -b 2.1.0 https://github.com/HeapsIO/heaps.git
+cd heaps
+```
+
+### 2. 放置工具文件
+
+将 `hmd2fbx` 目录放在 Heaps 源码根目录下：
+
+```
+heaps/
+├── h2d/
+├── h3d/
+├── hxd/
+├── hxsl/
+├── hmd2fbx/          # 本工具目录
+│   ├── HMD2FBX.hx
+│   ├── HMD2FBX.hxml
+│   └── README.md
+└── ...
+```
+
+### 3. 安装依赖
 
 ```bash
 haxelib install format
 ```
 
-### 2. 编译
+### 4. 编译
 
 ```bash
 cd hmd2fbx
 haxe HMD2FBX.hxml
 ```
 
-### 3. 使用
+### 5. 使用
 
 ```bash
 hl HMD2FBX.hl <input.hmd|hwd> <output.fbx>
